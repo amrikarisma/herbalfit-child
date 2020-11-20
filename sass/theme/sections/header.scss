@@ -1,0 +1,120 @@
+.topbar-wrapp {
+    color: #fff;
+    background-color: #88B44E;
+    .topbar-left {
+        font-size: 14px;
+        span {
+            margin-left: 10px;
+            @media (min-width:768px) {
+                margin-left: 40px;
+            }
+            &.phone {
+                font-weight: bold;
+            }
+        }
+    }
+}
+.navbar.navbar-dark {
+    background-color: #252C30;
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+    .navbar-nav {
+        .nav-link {
+            padding: 4px 18px 0;
+            color: #fff;
+        }
+    }
+    img {
+        max-height: 63px;
+        max-width: 200px;
+    }
+    ul>li.nav-item {
+        a {
+            &::after {
+                display: inline-block;
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: inherit;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-size: 14px;
+                vertical-align: middle;
+                content: "\f105";
+                font-weight: 400;
+                margin: 4px 0 0 6px;
+                position: absolute;
+                transition: color 0.5s ease;
+            }
+        }
+    }
+}
+header {
+    background-image: url(//chaitan.like-themes.com/wp-content/uploads/2018/07/inner-bg-cut.jpg) !important;
+    background-attachment: fixed;
+    min-height: 465px;
+    background-color: var(--black);
+    color: #fff;
+    color: var(--white);
+    text-align: left;
+    position: relative;
+    margin: 0;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+    h1 {
+        margin: 0;
+        color: #fff;
+        color: var(--white);
+        position: relative;
+        z-index: 11;
+        font-size: 48px;
+    }
+    .breadcrumbs {
+        list-style: none;
+        margin: 10px 0 5px 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            margin: 0 0 0 0px;
+            font-size: 16px;
+            color: #fff;
+            color: var(--white);
+            font-family: 'Playfair Display', sans-serif;
+            font-family: var(--font-headers), sans-serif;
+            font-weight: 700;
+            @media (max-width: 768px) {
+                font-size: 14px;
+              }
+              a {
+                color: #88B44E;
+                color: var(--main);
+                font-style: normal;
+                &:hover {
+                    color: #fff;
+                    color: var(--white);
+                  }
+              }
+              &:not(:last-child)::after {
+                margin: 4px 7px 0 12px;
+                vertical-align: middle;
+                padding-bottom: 4px;
+                content: "\f054";
+                display: inline-block;
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: inherit;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-size: 8px;
+                font-weight: 400;
+                color: #88B44E;
+                color: var(--main);
+              }
+          }
+      }
+}
