@@ -31,3 +31,14 @@ function add_child_theme_textdomain() {
     load_child_theme_textdomain( 'herbalfit-child', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
+
+function woocommerce_remove_breadcrumb(){
+    remove_action( 
+        'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    }
+add_action('woocommerce_before_main_content', 'woocommerce_remove_breadcrumb');
+
+// function woocommerce_custom_breadcrumb(){
+//     woocommerce_breadcrumb();
+// }
+// add_action( 'woo_custom_breadcrumb', 'woocommerce_custom_breadcrumb' );

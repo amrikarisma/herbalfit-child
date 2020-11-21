@@ -1,5 +1,185 @@
 @import "sections/header";                             // <------- Add your styles into this file
+@import "sections/breadcrumb";
+@import "sections/cart";
+@import "sections/shop";
+@import "sections/single-product";
+@import "sections/footer";
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-weight: 900;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.3em;
+}
+h2, .h2 {
+    margin: 42px 0 16px;
+    font-size: 48px;
+}
+a:active, a:hover {
+    outline: 0;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus {
+    outline: 0 none;
+    text-decoration: none;
+}
+.form-control:focus, 
+input:focus {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+form textarea, 
+.form-row textarea, 
+form input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]), 
+.form-row input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]) {
+    width: 100%;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Playfair Display', sans-serif;
+    font-family: var(--font-headers), sans-serif;
+    font-weight: 700;
+    font-weight: 400;
+    padding: 20px 30px;
+    border: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.1);
+    border-color: var(--gray-dark);
+    -webkit-border-radius: 36px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 36px;
+    -moz-background-clip: padding;
+    border-radius: 36px;
+    background-clip: padding-box;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.button, 
+input[type="button"], 
+input[type="submit"], 
+.btn, 
+.woocommerce button[name="update_cart"], 
+.woocommerce input[name="update_cart"], 
+.woocommerce a.button, 
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce input.button {
+    -webkit-border-radius: 36px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 36px;
+    -moz-background-clip: padding;
+    border-radius: 36px;
+    background-clip: padding-box;
+    transition: color 0.3s ease, opacity 0.3s ease, border 0.3s ease, background 0.3s ease, box-shadow 0.25s ease-in-out;
+    font-size: 14px;
+    padding: 15px 56px 15px 34px;
+    margin-bottom: 25px;
+    min-width: 170px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    -webkit-background-clip: border-box;
+    -moz-background-clip: border-box;
+    background-clip: border-box;
+    color: #fff;
+    color: var(--white);
+    background-color: #88B44E;
+}
+.button.btn-xs, input[type="button"].btn-xs, input[type="submit"].btn-xs, .btn.btn-xs {
+    font-size: 12px;
+    padding: 8px 48px 8px 26px;
+    line-height: 1.6em;
+    min-width: 110px;
+}
+.button.btn-default, input[type="button"].btn-default, input[type="submit"].btn-default, .btn.btn-default {
+    background-color: #88B44E;
+    color: #fff;
+    &:hover {
+        background-color: #252C30;
+        color: #fff;
+    }
+}
+.button, 
+input[type="button"], 
+input[type="submit"], 
+.btn {
+    &::after {
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\f138";
+        font-size: 14px;
+        margin-left: 10px;
+        padding-top: 1px;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+    }
+}
 .btn-primary {
     color: var(--white);
+}
+.btn-outline-primary {
+    &:hover {
+        color: var(--white);
+    }
+}
+button {
+    -webkit-border-radius: 36px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 36px;
+    -moz-background-clip: padding;
+    border-radius: 36px;
+    background-clip: padding-box;
+    transition: color 0.3s ease, opacity 0.3s ease, border 0.3s ease, background 0.3s ease, box-shadow 0.25s ease-in-out;
+    font-size: 14px;
+    padding: 15px 56px 15px 34px;
+    margin-bottom: 25px;
+    min-width: 170px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', sans-serif;
+    font-family: var(--font-headers), sans-serif;
+    font-weight: 700;
+    -webkit-background-clip: border-box;
+    -moz-background-clip: border-box;
+    background-clip: border-box;
+    color: #fff;
+    color: var(--white);
+    background-color: #88B44E;
+    background-color: var(--main);
 }
