@@ -1,5 +1,5 @@
 # herbalfit-child
-Basic Child Theme for BenSemangat Theme Framework: https://github.com/amrikarisma/bensemangat
+HerbalFit Child Theme for BenSemangat Theme Framework: https://github.com/amrikarisma/bensemangat
 
 ## How it works
 Bensemangat Child Theme shares with the parent theme all PHP files and adds its own functions.php on top of the BenSemangat parent theme's functions.php.

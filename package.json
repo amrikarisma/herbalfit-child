@@ -1,7 +1,7 @@
 {
   "name": "herbalfit-child",
   "version": "0.5.5",
-  "description": "Basic Child Theme for BenSemangat Theme Framework: https://github.com/amrikarisma/bensemangat",
+  "description": "HerbalFit Child Theme for BenSemangat Theme Framework: https://github.com/amrikarisma/bensemangat",
   "main": "index.js",
   "scripts": {
     "postinstall": "gulp copy-assets"
