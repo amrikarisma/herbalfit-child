@@ -3,7 +3,16 @@
 @import "sections/cart";
 @import "sections/shop";
 @import "sections/single-product";
+@import "sections/page";
 @import "sections/footer";
+@import "sections/contact-form7";
+
+html, body, div, table {
+    font-size: 14px;
+    line-height: 1.7em;
+    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-main), sans-serif;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', sans-serif;
@@ -17,6 +26,19 @@ h2, .h2 {
     margin: 42px 0 16px;
     font-size: 48px;
 }
+h3, .h3 {
+    margin: 42px 0 16px;
+    font-size: 36px;
+}
+h4, .h4 {
+    margin: 42px 0 16px;
+    font-size: 30px;
+}
+h6, .h6 {
+    margin: 42px 0 16px;
+    font-size: 18px;
+    font-weight: 700;
+}
 a:active, a:hover {
     outline: 0;
 }
@@ -27,6 +49,39 @@ a:focus {
     outline: 0 none;
     text-decoration: none;
 }
+label {
+    font-weight: bold;
+}
+.menu-primary-container {
+    z-index: 2;
+}
+.header {
+    font-family: 'Playfair Display', sans-serif;
+    font-family: var(--font-headers), sans-serif;
+    font-weight: 700;
+    font-weight: 900;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+input[type="submit"], button {
+    -webkit-background-clip: border-box !important;
+    -moz-background-clip: border-box !important;
+    background-clip: border-box !important;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+.button.btn-default:hover, 
+input[type="button"].btn-default:hover, 
+input[type="submit"].btn-default:hover, 
+.btn.btn-default:hover,
+input[type="submit"].wpcf7-submit:hover {
+    background-color: #252C30;
+    background-color: var(--black);
+    color: #fff;
+    color: var(--white);
+}
 .form-control:focus, 
 input:focus {
     outline: none;
@@ -34,6 +89,7 @@ input:focus {
     -moz-box-shadow: none !important;
     box-shadow: none !important;
 }
+
 form textarea, 
 .form-row textarea, 
 form input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]), 

@@ -130,3 +130,19 @@
 .comment-text p, .text-page p {
     margin-bottom: 30px;
 }
+.woocommerce-product-search label, .wp-searchform label, form.post-password-form label, form.search-form label, form.wpcf7-form label, form.form label, form label {
+    text-align: left;
+    display: block;
+    font-size: 14px;
+}
+.woocommerce-product-search, .wp-searchform, form.post-password-form, form.search-form, form.wpcf7-form, form.form, form {
+    text-align: center;
+    padding: 45px;
+    -webkit-border-radius: 2px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 2px;
+    -moz-background-clip: padding;
+    border-radius: 2px;
+    background-clip: padding-box;
+    position: relative;
+}
