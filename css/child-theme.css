@@ -10782,7 +10782,7 @@ a.text-custom-color:hover, a.text-custom-color:focus {
     transition: color 0.5s ease; }
 
 header {
-  background-image: url(//chaitan.like-themes.com/wp-content/uploads/2018/07/inner-bg-cut.jpg) !important;
+  background-image: url("http://chaitan.like-themes.com/wp-content/uploads/2018/07/inner-bg-cut.jpg") !important;
   background-attachment: fixed;
   min-height: 365px;
   color: #fff;
