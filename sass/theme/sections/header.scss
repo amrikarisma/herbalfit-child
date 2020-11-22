@@ -52,10 +52,8 @@
 header {
     background-image: url(//chaitan.like-themes.com/wp-content/uploads/2018/07/inner-bg-cut.jpg) !important;
     background-attachment: fixed;
-    min-height: 465px;
-    background-color: var(--black);
+    min-height: 365px;
     color: #fff;
-    color: var(--white);
     text-align: left;
     position: relative;
     margin: 0;
@@ -64,12 +62,11 @@ header {
     flex-direction: column;
     justify-content: center;
     padding-bottom: 9px;
-    margin: 40px 0 20px;
+    margin: 0 0 20px;
     border-bottom: 1px solid #eee;
     h1 {
         margin: 0;
         color: #fff;
-        color: var(--white);
         position: relative;
         z-index: 11;
         font-size: 48px;
@@ -78,25 +75,21 @@ header {
         list-style: none;
         margin: 10px 0 5px 0;
         padding: 0;
-        li {
+        >span {
             display: inline-block;
             margin: 0 0 0 0px;
             font-size: 16px;
             color: #fff;
-            color: var(--white);
             font-family: 'Playfair Display', sans-serif;
-            font-family: var(--font-headers), sans-serif;
             font-weight: 700;
             @media (max-width: 768px) {
                 font-size: 14px;
               }
               a {
                 color: #88B44E;
-                color: var(--main);
                 font-style: normal;
                 &:hover {
                     color: #fff;
-                    color: var(--white);
                   }
               }
               &:not(:last-child)::after {
@@ -113,7 +106,6 @@ header {
                 font-size: 8px;
                 font-weight: 400;
                 color: #88B44E;
-                color: var(--main);
               }
           }
       }

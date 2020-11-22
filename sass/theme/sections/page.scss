@@ -1,0 +1,101 @@
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.tempate-about,
+.tempate-products {
+    text-align: center;
+    .subheading {
+        color: #88B44E;
+        color: var(--main);
+        font-style: italic;
+        text-align: center;
+        margin-top: 0;
+        font-size: 16px;
+    }
+    .heading {
+        color: #252C30;
+        color: var(--black);
+        line-height: 1.4em;
+        text-align: center;
+    }
+    .wrap-list-about {
+        margin-bottom: 30px;
+    }
+    h3 {
+        margin:0 0 30px 0;
+    }
+    h6 {
+        margin: 0;
+        text-align: center;
+        margin: 15px 0 10px;
+    }
+    .text-desc {
+        margin:20px auto;
+        max-width: 770px;
+    }
+    .header-text {
+        zoom: 1;
+        filter: alpha(opacity=3);
+        -webkit-opacity: 0.03;
+        -moz-opacity: 0.03;
+        opacity: 0.03;
+        z-index: 1;
+        font-family: 'Playfair Display', sans-serif;
+        font-family: var(--font-headers), sans-serif;
+        font-weight: 700;
+        font-weight: 900;
+        font-size: 150px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        padding-bottom: 60px;
+    }
+    img {
+        max-width: 150px;
+    }
+}
+.tempate-products {
+    .box-content-slider {
+        margin: 50px 0;
+    }
+}
+.contact {
+    .form-wrapper {
+        background-color: #F5F8F2;
+        background-color: var(--gray);
+    }
+    .header {
+        margin-top: 0px;
+        margin-bottom: 32px;
+    }
+    .social-icons-list {
+        list-style: none;
+        margin: 14px 0 60px 0;
+        padding: 0;
+        margin-top: 50px;
+        li {
+            margin: 26px 0 0px 0;
+            i.fa {
+                color: #88B44E;
+                color: var(--main);
+                font-size: 24px;
+                width: 48px;
+                margin-left: -16px;
+                vertical-align: middle;
+                text-align: center;
+                position: absolute;
+            }
+            .head {
+                padding-left: 35px;
+                display: inline-block;
+            }
+        }
+    }
+}
