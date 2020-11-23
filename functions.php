@@ -189,7 +189,7 @@ function acf_google_maps() { ?>
 
 function header_bg_internal(){ ?>
     <style>
-        header {
+        header, .swiper-slide-cover {
             background-image : url(<?php echo get_stylesheet_directory_uri().'/img/tea-1150046_1920.jpg'; ?>);
         }
     </style>

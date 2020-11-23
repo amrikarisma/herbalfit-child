@@ -93,13 +93,13 @@ $container = get_theme_mod( 'bensemangat_container_type' );
             <div class="swiper-container homepage">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="slide1 swiper-slide-cover" style="background-image: url('http://almanarherbafit.local/wp-content/themes/herbalfit-child/img/tea-1150046_1920.jpg');"></div>
+                        <div class="slide1 swiper-slide-cover"></div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide2 swiper-slide-cover" style="background-image: url('http://almanarherbafit.local/wp-content/themes/herbalfit-child/img/tea-1150046_1920.jpg');"></div>
+                        <div class="slide2 swiper-slide-cover"></div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide3 swiper-slide-cover" style="background-image: url('http://almanarherbafit.local/wp-content/themes/herbalfit-child/img/tea-1150046_1920.jpg');"></div>
+                        <div class="slide3 swiper-slide-cover"></div>
                     </div>
 
                 </div>
