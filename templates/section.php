@@ -47,6 +47,11 @@ while ( have_posts() ) :
                     // die();
                     get_template_part( 'loop-templates/content', 'products', $section );
                     break;
+                case 'section_with_background':
+                    // var_dump($section);
+                    // die();
+                    get_template_part( 'loop-templates/content', 'background', $section );
+                    break;
 
                 
                 default:

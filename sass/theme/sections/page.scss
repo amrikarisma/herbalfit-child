@@ -99,3 +99,52 @@ section {
         }
     }
 }
+.tempate-with-background {
+    background-color: #88B44E;
+    background-color: var(--main);
+    background-image: url('../img/bg-2.png');
+    .heading {
+        color: #252C30;
+        color: var(--black);
+    }
+    .subheading {
+        font-size: 18px;
+        font-style: italic;
+        color: #fff;
+        color: var(--white);
+    }
+    .wrap-list {
+        margin-top: 30px;
+        .wrap-block-icon {
+            display: flex;
+            flex-direction: row;
+            .block-icon {
+                margin-top: 10px;
+                margin-bottom: 20px;
+                margin-right: 10px;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                display: inline-block;
+                -webkit-border-radius: 50%;
+                -webkit-background-clip: padding-box;
+                -moz-border-radius: 50%;
+                -moz-background-clip: padding;
+                border-radius: 50%;
+                background-clip: padding-box;
+                background-color: #fff;
+            }
+            .block-right {
+                align-self: center;
+                .header {
+                    font-size: 14px;
+                    margin: 0px 0 12px;
+                    line-height: 1.2em;
+                }
+            }
+        }
+
+    }
+
+}

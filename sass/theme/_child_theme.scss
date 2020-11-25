@@ -82,6 +82,27 @@ input[type="submit"].wpcf7-submit:hover {
     color: #fff;
     color: var(--white);
 }
+
+.button.btn-black, input[type="button"].btn-black, input[type="submit"].btn-black, .btn.btn-black {
+    color: #fff;
+    color: var(--white);
+    background-color: #252C30;
+    background-color: var(--black);
+}
+.button.btn-black:hover, input[type="button"].btn-black:hover, input[type="submit"].btn-black:hover, .btn.btn-black:hover {
+    color: #fff;
+    color: var(--white);
+    background-color: #88B44E;
+    background-color: var(--main);
+    border-color: rgba(0, 0, 0, 0.3);
+}
+.button.color-hover-white:hover, input[type="button"].color-hover-white:hover, input[type="submit"].color-hover-white:hover, .btn.color-hover-white:hover {
+    color: #252C30;
+    color: var(--black);
+    background-color: #fff;
+    background-color: var(--white);
+    border-color: rgba(0, 0, 0, 0.3);
+}
 .form-control:focus, 
 input:focus {
     outline: none;

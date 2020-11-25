@@ -11423,6 +11423,52 @@ section {
       padding-left: 35px;
       display: inline-block; }
 
+.tempate-with-background {
+  background-color: #88B44E;
+  background-color: var(--main);
+  background-image: url("../img/bg-2.png"); }
+  .tempate-with-background .heading {
+    color: #252C30;
+    color: var(--black); }
+  .tempate-with-background .subheading {
+    font-size: 18px;
+    font-style: italic;
+    color: #fff;
+    color: var(--white); }
+  .tempate-with-background .wrap-list {
+    margin-top: 30px; }
+    .tempate-with-background .wrap-list .wrap-block-icon {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .tempate-with-background .wrap-list .wrap-block-icon .block-icon {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        display: inline-block;
+        -webkit-border-radius: 50%;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 50%;
+        -moz-background-clip: padding;
+        border-radius: 50%;
+        background-clip: padding-box;
+        background-color: #fff; }
+      .tempate-with-background .wrap-list .wrap-block-icon .block-right {
+        -ms-flex-item-align: center;
+            align-self: center; }
+        .tempate-with-background .wrap-list .wrap-block-icon .block-right .header {
+          font-size: 14px;
+          margin: 0px 0 12px;
+          line-height: 1.2em; }
+
 footer .footer-full-wrap {
   background-image: url(//chaitan.like-themes.com/wp-content/uploads/2018/06/footer-2-bg.png) !important;
   background: 50% 100% no-repeat;
@@ -11580,6 +11626,26 @@ input[type="submit"].wpcf7-submit:hover {
   background-color: var(--black);
   color: #fff;
   color: var(--white); }
+
+.button.btn-black, input[type="button"].btn-black, input[type="submit"].btn-black, .btn.btn-black {
+  color: #fff;
+  color: var(--white);
+  background-color: #252C30;
+  background-color: var(--black); }
+
+.button.btn-black:hover, input[type="button"].btn-black:hover, input[type="submit"].btn-black:hover, .btn.btn-black:hover {
+  color: #fff;
+  color: var(--white);
+  background-color: #88B44E;
+  background-color: var(--main);
+  border-color: rgba(0, 0, 0, 0.3); }
+
+.button.color-hover-white:hover, input[type="button"].color-hover-white:hover, input[type="submit"].color-hover-white:hover, .btn.color-hover-white:hover {
+  color: #252C30;
+  color: var(--black);
+  background-color: #fff;
+  background-color: var(--white);
+  border-color: rgba(0, 0, 0, 0.3); }
 
 .form-control:focus,
 input:focus {
