@@ -2,7 +2,50 @@ section {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
+.action {
+    margin-top: -50px;
+    padding-top: 0;
+    .col:nth-child(1) .item {
+        padding-left: 60px;
+        background-color: #F5F8F2;
+        background-color: var(--gray);
+        -webkit-border-top-left-radius: 100px;
+        -moz-border-radius-topleft: 100px;
+        border-top-left-radius: 100px;
+        -webkit-border-bottom-left-radius: 100px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius-bottomleft: 100px;
+        -moz-background-clip: padding;
+        border-bottom-left-radius: 100px;
+        background-clip: padding-box;
+    }
+    .col:nth-child(2) .item {
+        background-color: #252C30;
+        background-color: var(--black);
+        .header {
+            color: #fff;
+        }
+    }
+    .col:nth-child(3) .item {
+        background-color: #88B44E;
+        background-color: var(--main);
+        -webkit-border-top-right-radius: 100px;
+        -moz-border-radius-topright: 100px;
+        border-top-right-radius: 100px;
+        -webkit-border-bottom-right-radius: 100px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius-bottomright: 100px;
+        -moz-background-clip: padding;
+        border-bottom-right-radius: 100px;
+        background-clip: padding-box;
+    }
+    .item {
+        padding: 36px 0 36px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 .tempate-about,
 .tempate-products {
     text-align: center;
@@ -57,9 +100,27 @@ section {
         transform: translate(-50%, -50%);
         padding-bottom: 60px;
     }
-    img {
-        max-width: 150px;
-    }
+    .title {
+        margin: -60px auto 0;
+         text-align: center;
+         position: relative;
+         z-index: 5;
+         color: #252C30;
+         color: var(--black);
+         background-color: #fff;
+         background-color: var(--white);
+         padding: 15px 25px 25px;
+         -webkit-border-radius: 2px;
+         -webkit-background-clip: padding-box;
+         -moz-border-radius: 2px;
+         -moz-background-clip: padding;
+         border-radius: 2px;
+         background-clip: padding-box;
+         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+         -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+         max-width: 315px;
+     }
 }
 .tempate-products {
     .box-content-slider {
@@ -95,6 +156,139 @@ section {
             .head {
                 padding-left: 35px;
                 display: inline-block;
+            }
+        }
+    }
+}
+.tempate-with-background {
+    background-color: #88B44E;
+    background-color: var(--main);
+    background-image: url('../img/bg-2.png');
+    .heading {
+        color: #252C30;
+        color: var(--black);
+    }
+    .subheading {
+        font-size: 18px;
+        font-style: italic;
+        color: #fff;
+        color: var(--white);
+    }
+    .wrap-list {
+        margin-top: 30px;
+        .wrap-block-icon {
+            display: flex;
+            flex-direction: row;
+            .block-icon {
+                margin-top: 10px;
+                margin-bottom: 20px;
+                margin-right: 10px;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                display: inline-block;
+                -webkit-border-radius: 50%;
+                -webkit-background-clip: padding-box;
+                -moz-border-radius: 50%;
+                -moz-background-clip: padding;
+                border-radius: 50%;
+                background-clip: padding-box;
+                background-color: #fff;
+            }
+            .block-right {
+                align-self: center;
+                .header {
+                    font-size: 14px;
+                    margin: 0px 0 12px;
+                    line-height: 1.2em;
+                }
+            }
+        }
+
+    }
+
+}
+.tempate-with-background-image {
+    text-align: center;
+    margin-bottom: calc(100%/4);
+    
+    // .image-template {
+    //     height: 480px;
+    // }
+    .heading,
+    .subheading,
+    .block-right {
+        color: #fff;
+        color: var(--white);
+    }
+    .heading {
+        font-size: 60px;
+        margin: 64px 0 16px;
+    }
+    .subheading {
+        font-family: 'Playfair Display', sans-serif;
+        font-family: var(--font-headers), sans-serif;
+        font-style: italic;
+        font-size: 18px;
+        margin-bottom: 35px;
+    }
+    .wrap-list {
+        padding-top: 60px;
+    }
+}
+
+#ltx-logo-footer {
+    background: 50% 50% no-repeat;
+    background-color: #252C30;
+    background-color: var(--black);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 40px 0;
+    img {
+        max-width: 194px;
+    }
+    .ltx-social {
+        &.ltx-nav-second {
+            text-align: right;
+            display: flex;
+            flex-direction: row-reverse;
+            .header {
+                color: #fff;
+                font-size: 20px;
+                justify-self: center;
+                align-items: center;
+                display: flex;
+            }
+            ul {
+                margin-bottom: 0;
+            }
+            li {
+                display: inline-block;
+                margin-left: 12px;
+                a {
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 18px;
+                    display: block;
+                    background-color: #88B44E;
+                    background-color: var(--main);
+                    color: #fff;
+                    color: var(--white);
+                    -webkit-border-radius: 50%;
+                    -webkit-background-clip: padding-box;
+                    -moz-border-radius: 50%;
+                    -moz-background-clip: padding;
+                    border-radius: 50%;
+                    background-clip: padding-box;
+                    text-align: center;
+                    &:hover {
+                        background-color: #fff;
+                        background-color: var(--white);
+                        color: #252C30;
+                        color: var(--black);
+                    }
+                }
             }
         }
     }
