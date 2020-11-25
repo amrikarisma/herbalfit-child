@@ -18,9 +18,9 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 var homepage = new Swiper('.homepage', {
-  // direction: 'vertical',
-  // loop:   true,
-  // autoHeight:true,
+  fadeEffect: {
+    crossFade: true
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,

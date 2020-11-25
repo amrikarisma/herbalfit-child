@@ -31,6 +31,9 @@ while ( have_posts() ) :
 
             switch ($section['acf_fc_layout']) :
             
+                case 'action':
+                    get_template_part( 'loop-templates/content', 'action', $section );
+                    break;
                 case 'about':
                     get_template_part( 'loop-templates/content', 'about', $section );
                     break;
@@ -38,19 +41,20 @@ while ( have_posts() ) :
                     get_template_part( 'loop-templates/content', 'contact', $section );
                     break;
                 case 'maps':
-                    // var_dump($section);
-                    // die();
                     get_template_part( 'loop-templates/content', 'maps', $section );
                     break;
                 case 'products':
-                    // var_dump($section);
-                    // die();
                     get_template_part( 'loop-templates/content', 'products', $section );
                     break;
                 case 'section_with_background':
                     // var_dump($section);
                     // die();
                     get_template_part( 'loop-templates/content', 'background', $section );
+                    break;
+                case 'section_with_image_background':
+                    // var_dump($section);
+                    // die();
+                    get_template_part( 'loop-templates/content', 'image', $section );
                     break;
 
                 
@@ -61,6 +65,8 @@ while ( have_posts() ) :
             endswitch;
 
         endforeach;
+
+        get_template_part( 'loop-templates/content', 'footer', $section );
 
     endif;
 

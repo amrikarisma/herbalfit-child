@@ -33,7 +33,7 @@ $container = get_theme_mod( 'bensemangat_container_type' );
                 <div class="swiper-slide">
                     <div class="box-content-slider">
                         <div class="wrap-image">
-                            <img src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>"/>
+                            <img class="img-fluid" src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>"/>
                         </div>
                         <div class="title"><?php the_title(); ?></div>
                         <div class="caption"><?php echo $caption; ?></div>
@@ -41,15 +41,9 @@ $container = get_theme_mod( 'bensemangat_container_type' );
                 </div>
                 <?php endforeach; ?>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
         </div>
         <?php wp_reset_postdata(); ?>
         <?php endif; ?>
