@@ -10993,6 +10993,48 @@ nav.navbar .container {
   -moz-opacity: 1;
   opacity: 1; }
 
+nav.navbar.affix-top {
+  z-index: 100;
+  left: 0;
+  right: 0; }
+
+nav.navbar.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000; }
+
+.offcanvas-header {
+  display: none; }
+
+@media (max-width: 992px) {
+  .offcanvas-header {
+    display: block; }
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: black;
+    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    z-index: 99; }
+  .navbar-collapse.show {
+    visibility: visible;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); }
+    .navbar-collapse.show .container {
+      display: block; }
+    .navbar-collapse.show .navbar-nav {
+      margin-top: 15px; }
+      .navbar-collapse.show .navbar-nav a {
+        font-size: 20px;
+        padding: 10px 0 !important; } }
+
 .woocommerce .woocommerce-breadcrumb {
   color: #fff;
   margin-left: -15px;

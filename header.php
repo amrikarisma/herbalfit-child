@@ -99,15 +99,19 @@ $container = get_theme_mod( 'bensemangat_container_type' );
 					}
 					?>
 					<!-- end custom logo -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-trigger="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				
 			</button>
 
-			<div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+			<div class="navbar-collapse justify-content-between" id="navbarToggle">
 				<?php if ( 'container' === $container ) : ?>
 					<div class="container">
-				<?php endif; ?>
+                <?php endif; ?>
+                <div class="offcanvas-header mt-3">  
+                    <button class="btn btn-outline-danger btn-close float-right"> &times Close </button>
+                    <h5 class="py-2 text-white">Main navbar</h5>
+                </div>
 					<!-- The WordPress Menu goes here -->
 					<?php
 						wp_nav_menu(

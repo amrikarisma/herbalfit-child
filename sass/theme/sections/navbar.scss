@@ -21,3 +21,47 @@ nav.navbar .container {
     -moz-opacity: 1;
     opacity: 1;
 }
+nav.navbar.affix-top {
+    z-index: 100;
+    left: 0;
+    right: 0;
+}
+nav.navbar.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+.offcanvas-header{ display:none; }
+
+@media (max-width: 992px) {
+  .offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: black;
+    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    z-index: 99;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+    .container {
+        display: block;
+    }
+    .navbar-nav {
+        margin-top:15px;
+        a {
+            font-size: 20px;
+            padding: 10px 0 !important;
+        }
+    }
+  }
+}

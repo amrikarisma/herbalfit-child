@@ -41,6 +41,14 @@ var homepage = new Swiper('.homepage', {
   },
 });
 
-$(document).ready(function() {
-  $('.navbar-toggler').bigSlide();
+jQuery("[data-trigger]").on("click", function(){
+  var trigger_id =  jQuery(this).attr('data-trigger');
+  jQuery(trigger_id).toggleClass("show");
+  jQuery('body').toggleClass("offcanvas-active");
+});
+
+// close button 
+jQuery(".btn-close").click(function(e){
+  jQuery(".navbar-collapse").removeClass("show");
+  jQuery("body").removeClass("offcanvas-active");
 });
