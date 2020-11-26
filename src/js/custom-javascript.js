@@ -1,5 +1,5 @@
 // Add your custom JS here.
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.products', {
     cssMode: true,
     // height:680,
     // autoHeight:true,
@@ -15,6 +15,20 @@ var swiper = new Swiper('.swiper-container', {
     },
     mousewheel: true,
     keyboard: true,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      }
+    }
 });
 
 var homepage = new Swiper('.homepage', {
@@ -25,4 +39,8 @@ var homepage = new Swiper('.homepage', {
     el: '.swiper-pagination',
     clickable: true,
   },
+});
+
+$(document).ready(function() {
+  $('.navbar-toggler').bigSlide();
 });

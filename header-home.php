@@ -57,54 +57,35 @@ $container = get_theme_mod( 'bensemangat_container_type' );
 
                         <?php
                         } else {
-                            echo '<div class="d-none d-lg-block">';
+                            echo '<div class="d-block">';
                                 the_custom_logo();
                             echo '</div>';
                         }
                         ?>
                 </div>
-                <div class="navbar-collapse collapse navbar-desktop" id="navbarToggle">
-                    <?php
-                        wp_nav_menu(
-                            array(
-                                'theme_location'  => 'secondary',
-                                'container_class' => '',
-                                'container_id'    => '',
-                                'menu_class'      => 'navbar-nav',
-                                'fallback_cb'     => '',
-                                'menu_id'         => 'secondary-menu',
-                                'depth'           => 2,
-                                'walker'          => new Bensemangat_WP_Bootstrap_Navwalker(),
-                            )
-                        );
-                        ?>
-                </div>
+                <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location'  => 'secondary',
+                            'container_class' => 'navbar-collapse collapse navbar-desktop',
+                            'container_id'    => 'navbarNavDropdown',
+                            'menu_class'      => 'navbar-nav',
+                            'fallback_cb'     => '',
+                            'menu_id'         => 'secondary-menu',
+                            'depth'           => 2,
+                            'walker'          => new Bensemangat_WP_Bootstrap_Navwalker(),
+                        )
+                    );
+                ?>
                 <div class="navbar-controls">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
+
             </div>
 
 		</nav>
 		<!-- .site-navigation -->
         
-        <div class="wrapper-slider">
-            <div class="swiper-container homepage">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="slide1 swiper-slide-cover"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide2 swiper-slide-cover"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide3 swiper-slide-cover"></div>
-                    </div>
-
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
     </div><!-- #wrapper-navbar end -->

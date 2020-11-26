@@ -15,11 +15,12 @@ if(is_front_page()) :
 else :
     get_header();
 endif;
-
+echo '<div class="wrapper-section">';
 while ( have_posts() ) :
     the_post();
     if(is_front_page()) :
         get_template_part( 'component-templates/comp', 'home' );
+        get_template_part( 'loop-templates/content', 'slide' );
     else :
 	    get_template_part( 'component-templates/comp', 'header' );
     endif;
@@ -77,5 +78,5 @@ while ( have_posts() ) :
 	// get_template_part( 'loop-templates/content', 'about' );
 	// get_template_part( 'loop-templates/content', 'contact' );
 endwhile;
-
+echo '</div>';
 get_footer();

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'bensemangat_container_type' );
 ?>
 
-<section class="template-products">
+<section class="blogs">
     <div class="<?php echo esc_attr( $container ); ?>">
         <div class="subheading"><?php echo $args['subheading']; ?></div>
         <h3 class="heading"><?php echo $args['heading']; ?></h3>
@@ -21,7 +21,7 @@ $container = get_theme_mod( 'bensemangat_container_type' );
         // print_r($images);die();
         if( $args['item'] ): ?>
         <!-- Slider main container -->
-        <div class="swiper-container products">
+        <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
             <?php foreach ( $args['item'] as $post ) : ?>

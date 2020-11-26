@@ -1,0 +1,23 @@
+nav.navbar .container {
+    position: relative;
+    overflow: visible;
+}
+
+#wrapper-navbar .container {
+    zoom: 1;
+    filter: alpha(opacity=0);
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+#wrapper-navbar.inited .container {
+    zoom: 1;
+    filter: alpha(opacity=100);
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+}
