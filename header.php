@@ -101,7 +101,6 @@ $container = get_theme_mod( 'bensemangat_container_type' );
 					<!-- end custom logo -->
 			<button class="navbar-toggler" type="button" data-trigger="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
-				
 			</button>
 
 			<div class="navbar-collapse justify-content-between" id="navbarToggle">

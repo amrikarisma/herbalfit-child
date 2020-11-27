@@ -67,7 +67,7 @@ $container = get_theme_mod( 'bensemangat_container_type' );
                     wp_nav_menu(
                         array(
                             'theme_location'  => 'secondary',
-                            'container_class' => 'navbar-collapse collapse navbar-desktop',
+                            'container_class' => 'navbar-collapse navbar-desktop',
                             'container_id'    => 'navbarNavDropdown',
                             'menu_class'      => 'navbar-nav',
                             'fallback_cb'     => '',
@@ -78,7 +78,7 @@ $container = get_theme_mod( 'bensemangat_container_type' );
                     );
                 ?>
                 <div class="navbar-controls">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+                    <button class="navbar-toggler" type="button" data-trigger="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
