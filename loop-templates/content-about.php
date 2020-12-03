@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'bensemangat_container_type' );
 ?>
 
-<section class="tempate-about">
+<section class="template-about">
     <div class="<?php echo esc_attr( $container ); ?>">
         <div class="subheading"><?php echo $args['subheading']; ?></div>
         <h3 class="heading"><?php echo $args['heading']; ?></h3>

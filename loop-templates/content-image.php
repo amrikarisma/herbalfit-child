@@ -16,7 +16,7 @@ $color2 = $args['styling']['font_color_2'] ? 'style="color:'.$args['styling']['f
 
 ?>
 
-<section class="tempate-with-background-image" >
+<section class="template-with-background-image" >
     <div class="image-template" <?php echo $bgImgFull; ?>>
         <div class="<?php echo esc_attr( $container ); ?>">
             <div class="row">

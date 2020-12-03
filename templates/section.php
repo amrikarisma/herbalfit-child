@@ -15,11 +15,12 @@ if(is_front_page()) :
 else :
     get_header();
 endif;
-
+echo '<div class="wrapper-section">';
 while ( have_posts() ) :
     the_post();
     if(is_front_page()) :
         get_template_part( 'component-templates/comp', 'home' );
+        // get_template_part( 'loop-templates/content', 'slide' );
     else :
 	    get_template_part( 'component-templates/comp', 'header' );
     endif;
@@ -31,6 +32,11 @@ while ( have_posts() ) :
 
             switch ($section['acf_fc_layout']) :
             
+                case 'header':
+                    // var_dump($section);
+                    // die();
+                    get_template_part( 'loop-templates/content', 'slide', $section );
+                    break;
                 case 'action':
                     get_template_part( 'loop-templates/content', 'action', $section );
                     break;
@@ -47,13 +53,9 @@ while ( have_posts() ) :
                     get_template_part( 'loop-templates/content', 'products', $section );
                     break;
                 case 'section_with_background':
-                    // var_dump($section);
-                    // die();
                     get_template_part( 'loop-templates/content', 'background', $section );
                     break;
                 case 'section_with_image_background':
-                    // var_dump($section);
-                    // die();
                     get_template_part( 'loop-templates/content', 'image', $section );
                     break;
 
@@ -77,5 +79,5 @@ while ( have_posts() ) :
 	// get_template_part( 'loop-templates/content', 'about' );
 	// get_template_part( 'loop-templates/content', 'contact' );
 endwhile;
-
+echo '</div>';
 get_footer();

@@ -1,4 +1,5 @@
 @import "sections/header";                             // <------- Add your styles into this file
+@import "sections/navbar";                             // <------- Add your styles into this file
 @import "sections/breadcrumb";
 @import "sections/cart";
 @import "sections/shop";
@@ -243,7 +244,13 @@ input[type="submit"],
         color: var(--white);
     }
 }
-button {
+.button, 
+input[type="button"],
+ input[type="submit"], 
+ .btn, 
+ .woocommerce button[name="update_cart"], 
+ .woocommerce input[name="update_cart"], .woocommerce a.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button,
+ .woocommerce input.button {
     -webkit-border-radius: 36px;
     -webkit-background-clip: padding-box;
     -moz-border-radius: 36px;
