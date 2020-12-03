@@ -63,12 +63,17 @@ $container = get_theme_mod( 'bensemangat_container_type' );
                         }
                         ?>
                 </div>
+                <div class="navbar-controls">
+                    <button class="navbar-toggler" type="button" data-trigger="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
                 <?php
                     wp_nav_menu(
                         array(
                             'theme_location'  => 'secondary',
                             'container_class' => 'navbar-collapse navbar-desktop',
-                            'container_id'    => 'navbarNavDropdown',
+                            'container_id'    => 'navbarToggle',
                             'menu_class'      => 'navbar-nav',
                             'fallback_cb'     => '',
                             'menu_id'         => 'secondary-menu',
@@ -77,11 +82,7 @@ $container = get_theme_mod( 'bensemangat_container_type' );
                         )
                     );
                 ?>
-                <div class="navbar-controls">
-                    <button class="navbar-toggler" type="button" data-trigger="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
+
 
             </div>
 

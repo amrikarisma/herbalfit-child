@@ -195,7 +195,7 @@ function header_bg_internal(){ ?>
         }
     </style>
 <?php }
-add_action( 'wp_enqueue_scripts', 'header_bg_internal' ); 
+// add_action( 'wp_enqueue_scripts', 'header_bg_internal' ); 
 
 
 // function woocommerce_custom_breadcrumb(){

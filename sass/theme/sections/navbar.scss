@@ -21,6 +21,14 @@ nav.navbar .container {
     -moz-opacity: 1;
     opacity: 1;
 }
+.navbar {
+    .navbar-toggler-icon {
+        // background-image: url(../img/icon-nav.svg);
+        background-color: #88B44E;
+        -webkit-mask-image: url(../img/icon-nav.svg);
+        mask-image: url(../img/icon-nav.svg);
+    }
+}
 nav.navbar.affix-top {
     z-index: 100;
     left: 0;
@@ -58,6 +66,7 @@ nav.navbar.affix {
     }
     .navbar-nav {
         margin-top:15px;
+
         a {
             font-size: 20px;
             padding: 10px 0 !important;
@@ -65,3 +74,4 @@ nav.navbar.affix {
     }
   }
 }
+
