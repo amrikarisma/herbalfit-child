@@ -48,7 +48,7 @@ jQuery("[data-trigger]").on("click", function(){
 });
 
 // close button 
-jQuery(".btn-close").click(function(e){
+jQuery(".btn-close").on('click', function(e){
   jQuery(".navbar-collapse").removeClass("show");
   jQuery("body").removeClass("offcanvas-active");
 });

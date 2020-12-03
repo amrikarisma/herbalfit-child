@@ -43,6 +43,25 @@ nav.navbar.affix {
 .offcanvas-header{ display:none; }
 
 @media (max-width: 992px) {
+    .offcanvas-active {
+        position: fixed;
+        top: 0;
+        .navbar-layout-desktop-center-absolute {
+            height: 100%;
+            position: fixed;
+            .navbar-desktop {
+                margin-top: 0;
+            }
+            .navbar-controls {
+                z-index: 5;
+                top: 60px;
+            }
+        }
+        .navbar .navbar-toggler-icon {
+            // mask-image: url(../img/close.svg);
+            // -webkit-mask-image: url(../img/close.svg);
+        }
+    }
   .offcanvas-header{ display:block; }
   .navbar-collapse {
     position: fixed;
