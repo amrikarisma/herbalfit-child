@@ -190,12 +190,12 @@ function acf_google_maps() { ?>
 
 function header_bg_internal(){ ?>
     <style>
-        header, .swiper-slide-cover {
+        header {
             background-image : url(<?php echo get_stylesheet_directory_uri().'/img/tea-1150046_1920.jpg'; ?>);
         }
     </style>
 <?php }
-// add_action( 'wp_enqueue_scripts', 'header_bg_internal' ); 
+add_action( 'wp_enqueue_scripts', 'header_bg_internal' ); 
 
 
 // function woocommerce_custom_breadcrumb(){
