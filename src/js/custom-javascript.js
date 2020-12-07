@@ -32,6 +32,10 @@ var swiper = new Swiper('.products', {
 });
 
 var homepage = new Swiper('.homepage', {
+  loop: true,
+  autoplay:true,
+  zoom: true,
+  effect: 'fade',
   fadeEffect: {
     crossFade: true
   },

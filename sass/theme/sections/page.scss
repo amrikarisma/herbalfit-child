@@ -24,13 +24,27 @@ section {
         -moz-background-clip: padding;
         border-bottom-left-radius: 100px;
         background-clip: padding-box;
-
+        .header {
+            color: #252C30;
+            color: var(--black);
+            span {
+                color: #88B44E;
+                color: var(--main);
+                display: block;
+            }
+        }
     }
     .col-md:nth-child(2) .item {
         background-color: #252C30;
         background-color: var(--black);
         .header {
             color: #fff;
+            color: var(--white);
+            span {
+                display: block;
+                color: #88B44E;
+                color: var(--main);
+            }
         }
     }
     .col-md:nth-child(3) .item {
@@ -45,6 +59,15 @@ section {
         -moz-background-clip: padding;
         border-bottom-right-radius: 100px;
         background-clip: padding-box;
+        .header {
+            color: #fff;
+            color: var(--white);
+            span {
+                display: block;
+                color: #252C30;
+                color: var(--black);
+            }
+        }
     }
     .item {
         padding: 36px 0 36px 50px;
@@ -333,6 +356,9 @@ section {
                         background-color: var(--white);
                         color: #252C30;
                         color: var(--black);
+                    }
+                    @media (max-width:768px) {
+                        
                     }
                 }
             }
