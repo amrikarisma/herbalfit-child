@@ -40,9 +40,16 @@ $container = get_theme_mod( 'bensemangat_container_type' );
 					<div class="col-md-8">
 						<div class="topbar-left">
 							<?php if( get_theme_mod( 'bensemangat_site_info_phone') != "" ): ?>
-							<span class="phone"><?php echo get_theme_mod( 'bensemangat_site_info_phone'); ?></span>
-							<span><?php echo get_theme_mod( 'bensemangat_site_info_address'); ?></span>
-							<span><?php echo get_theme_mod( 'bensemangat_site_info_text'); ?></span>
+							<span class="phone"><i class="fa fa-phone-square" aria-hidden="true"></i>
+								<?php echo get_theme_mod( 'bensemangat_site_info_phone'); ?></span>
+							<?php endif; ?>
+							<?php if( get_theme_mod( 'bensemangat_site_info_address') != "" ): ?>
+							<span><i class="fa fa-map-marker" aria-hidden="true"></i>
+								<?php echo get_theme_mod( 'bensemangat_site_info_address'); ?></span>
+							<?php endif; ?>
+							<?php if( get_theme_mod( 'bensemangat_site_info_text') != "" ): ?>
+							<span><i class="fa fa-clock-o" aria-hidden="true"></i>
+								<?php echo get_theme_mod( 'bensemangat_site_info_text'); ?></span>
 							<?php endif; ?>
 						</div>
 					</div>
