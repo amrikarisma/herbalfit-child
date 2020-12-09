@@ -11622,6 +11622,26 @@ section {
       .template-about .header-text,
       .template-products .header-text {
         display: none; } }
+  .template-about .wraper-item,
+  .template-products .wraper-item {
+    width: 100%; }
+    .template-about .wraper-item .wrap-image,
+    .template-products .wraper-item .wrap-image {
+      position: absolute;
+      top: 0; }
+    .template-about .wraper-item .wrap-content,
+    .template-products .wraper-item .wrap-content {
+      margin-top: 100%;
+      padding-top: 35px;
+      padding-bottom: 35px; }
+    .template-about .wraper-item .wrap-button,
+    .template-products .wraper-item .wrap-button {
+      position: absolute;
+      bottom: -45px; }
+      @media (max-width: 767px) {
+        .template-about .wraper-item .wrap-button,
+        .template-products .wraper-item .wrap-button {
+          position: static; } }
 
 .template-products .box-content-slider {
   margin: 50px 0; }
