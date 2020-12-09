@@ -12161,4 +12161,7 @@ input[type="submit"],
   background-color: #88B44E;
   background-color: var(--main); }
 
+#content {
+  overflow: hidden; }
+
 /*# sourceMappingURL=child-theme.css.map */
