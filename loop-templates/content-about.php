@@ -24,7 +24,7 @@ $container = get_theme_mod( 'bensemangat_container_type' );
                     $img = $item['icon'] ? $item['icon'] : '';
                     // echo '<pre>';
                     // print_r($item['item_list']); die();
-                    echo '<div class="col-6 col-md-4 col-lg-3">';
+                    echo '<div class="col-6 col-md-4 col-lg-2">';
                     echo $img ? '<img class="img-fluid" src="'.$img['url'].'" alt="'.$img['alt'].'" />' : '';
                     echo $item['title'] ? '<h6 class="header">'.$item['title'].'</h6>' : '';
                     echo $item['description'] ? '<p>'.$item['description'].'</p>' : '';
@@ -34,7 +34,7 @@ $container = get_theme_mod( 'bensemangat_container_type' );
                             echo '<hr />';
                         }
                     }
-                    echo '<a href="#" class="btn btn-primary">Detail</a>';
+                    echo '<a href="'.$item['button']['url'].'" class="btn btn-primary">'.$item['button']['text'].'</a>';
                     echo '</div>';
 
                 } ?>
