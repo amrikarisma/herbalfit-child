@@ -332,11 +332,23 @@ section {
     img {
         max-width: 194px;
     }
+    .logo-footer {
+        @media (max-width: 991px) {
+            padding-bottom: 30px;
+            /* text-align: center; */
+            /* align-items: center; */
+            justify-content: center;
+            /* align-self: center; */
+            width: 100%;
+            display: flex;
+        }
+    }
     .ltx-social {
         &.ltx-nav-second {
             text-align: right;
             display: flex;
             flex-direction: row-reverse;
+            justify-content: center;
             .header {
                 color: #fff;
                 font-size: 20px;
@@ -346,11 +358,15 @@ section {
                 span {
                     white-space: nowrap;
                 }
+                @media (max-width: 991px) {
+                    display: none;
+                }
             }
             ul {
                 margin-bottom: 0;
                 @media (max-width:768px) {
                     margin-left: -15px;
+                    padding-left: 0;
                 }
             }
             li {

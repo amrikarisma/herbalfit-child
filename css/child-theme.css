@@ -10770,10 +10770,28 @@ a.text-custom-color:hover, a.text-custom-color:focus {
       .topbar-wrapp .topbar-left span.phone {
         font-weight: bold; }
 
+.navbar ul > li.nav-item a::after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  vertical-align: middle;
+  content: "\f105";
+  font-weight: 400;
+  margin: 4px 0 0 6px;
+  position: absolute;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease; }
+
 .navbar.navbar-dark {
   background-color: #252C30;
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05); }
+  .navbar.navbar-dark .navbar-nav .active .nav-link {
+    color: var(--main); }
   .navbar.navbar-dark .navbar-nav .nav-link {
     padding: 4px 18px 0;
     color: #fff; }
@@ -10783,21 +10801,6 @@ a.text-custom-color:hover, a.text-custom-color:focus {
     @media (max-width: 768px) {
       .navbar.navbar-dark img {
         max-width: 144px; } }
-  .navbar.navbar-dark ul > li.nav-item a::after {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 14px;
-    vertical-align: middle;
-    content: "\f105";
-    font-weight: 400;
-    margin: 4px 0 0 6px;
-    position: absolute;
-    -webkit-transition: color 0.5s ease;
-    transition: color 0.5s ease; }
 
 header {
   background-attachment: fixed;
@@ -10880,6 +10883,9 @@ header {
   z-index: 1000;
   padding-top: 20px;
   overflow: hidden; }
+  @media (max-width: 991px) {
+    .navbar-layout-desktop-center-absolute {
+      top: -10%; } }
   .navbar-layout-desktop-center-absolute li {
     margin-right: 10px; }
     .navbar-layout-desktop-center-absolute li a {
@@ -10917,28 +10923,35 @@ header {
       @media (max-width: 768px) {
         .navbar-layout-desktop-center-absolute .navbar-logo img {
           max-width: 130px; } }
-  .navbar-layout-desktop-center-absolute .navbar-desktop {
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 150px;
-    padding-top: 60px;
-    z-index: 4; }
-    .navbar-layout-desktop-center-absolute .navbar-desktop ul.navbar-nav a {
-      padding: 4px 18px 0;
-      position: relative;
-      font-weight: 400;
-      cursor: pointer; }
-    .navbar-layout-desktop-center-absolute .navbar-desktop ul.navbar-nav li,
-    .navbar-layout-desktop-center-absolute .navbar-desktop ul.navbar-nav a {
-      font-size: 16px;
-      vertical-align: middle;
-      -webkit-transition: none;
-      transition: none;
-      font-family: 'Playfair Display', sans-serif;
-      font-family: var(--font-headers), sans-serif;
-      font-weight: 700; }
+  @media (min-width: 992px) {
+    .navbar-layout-desktop-center-absolute .navbar-desktop {
+      text-align: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-top: 150px;
+      padding-top: 60px;
+      z-index: 4;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: 1;
+          -ms-flex: auto;
+              flex: auto; }
+      .navbar-layout-desktop-center-absolute .navbar-desktop ul.navbar-nav a {
+        padding: 4px 18px 0;
+        position: relative;
+        font-weight: 400;
+        cursor: pointer; }
+      .navbar-layout-desktop-center-absolute .navbar-desktop ul.navbar-nav li,
+      .navbar-layout-desktop-center-absolute .navbar-desktop ul.navbar-nav a {
+        font-size: 16px;
+        vertical-align: middle;
+        -webkit-transition: none;
+        transition: none;
+        font-family: 'Playfair Display', sans-serif;
+        font-family: var(--font-headers), sans-serif;
+        font-weight: 700; } }
   .navbar-layout-desktop-center-absolute .navbar-controls {
     position: absolute;
     right: 15px;
@@ -11045,13 +11058,15 @@ nav.navbar.affix {
 .offcanvas-header {
   display: none; }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .offcanvas-active {
     position: fixed;
     top: 0; }
     .offcanvas-active .navbar-layout-desktop-center-absolute {
       height: 100%;
-      position: fixed; }
+      position: fixed;
+      text-align: left;
+      top: 0; }
       .offcanvas-active .navbar-layout-desktop-center-absolute .navbar-desktop {
         margin-top: 0; }
       .offcanvas-active .navbar-layout-desktop-center-absolute .navbar-controls {
@@ -11775,6 +11790,19 @@ section {
   margin-bottom: -25px; }
   #ltx-logo-footer img {
     max-width: 194px; }
+  @media (max-width: 991px) {
+    #ltx-logo-footer .logo-footer {
+      padding-bottom: 30px;
+      /* text-align: center; */
+      /* align-items: center; */
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      /* align-self: center; */
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
   #ltx-logo-footer .ltx-social.ltx-nav-second {
     text-align: right;
     display: -webkit-box;
@@ -11783,7 +11811,10 @@ section {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse; }
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     #ltx-logo-footer .ltx-social.ltx-nav-second .header {
       color: #fff;
       font-size: 20px;
@@ -11796,11 +11827,15 @@ section {
       display: flex; }
       #ltx-logo-footer .ltx-social.ltx-nav-second .header span {
         white-space: nowrap; }
+      @media (max-width: 991px) {
+        #ltx-logo-footer .ltx-social.ltx-nav-second .header {
+          display: none; } }
     #ltx-logo-footer .ltx-social.ltx-nav-second ul {
       margin-bottom: 0; }
       @media (max-width: 768px) {
         #ltx-logo-footer .ltx-social.ltx-nav-second ul {
-          margin-left: -15px; } }
+          margin-left: -15px;
+          padding-left: 0; } }
     #ltx-logo-footer .ltx-social.ltx-nav-second li {
       display: inline-block;
       margin-left: 12px; }

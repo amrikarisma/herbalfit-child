@@ -24,7 +24,6 @@
   },
   "homepage": "https://bensemangat.com",
   "dependencies": {
-    "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.13",
     "del": "^4.1.0",
     "font-awesome": "^4.7.0",
@@ -46,8 +45,8 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
+    "jquery": "^1.12.4",
     "merge2": "^1.2.3",
-    "popper.js": "^1.15.0",
     "run-sequence": "^2.2.1",
     "undescores-for-npm": "^1.0.0"
   }

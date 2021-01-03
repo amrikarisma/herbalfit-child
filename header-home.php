@@ -68,20 +68,34 @@ $container = get_theme_mod( 'bensemangat_container_type' );
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
-                <?php
-                    wp_nav_menu(
-                        array(
-                            'theme_location'  => 'secondary',
-                            'container_class' => 'navbar-collapse navbar-desktop',
-                            'container_id'    => 'navbarToggle',
-                            'menu_class'      => 'navbar-nav',
-                            'fallback_cb'     => '',
-                            'menu_id'         => 'secondary-menu',
-                            'depth'           => 2,
-                            'walker'          => new Bensemangat_WP_Bootstrap_Navwalker(),
-                        )
-                    );
-                ?>
+			<div class="navbar-collapse justify-content-between " id="navbarToggle">
+				<?php if ( 'container' === $container ) : ?>
+					<div class="container">
+                <?php endif; ?>
+                <div class="offcanvas-header mt-3">  
+                    <button class="btn btn-outline-danger btn-close float-right"> &times Close </button>
+                    <h5 class="py-2 text-white">Main navbar</h5>
+                </div>
+		
+					<?php
+						wp_nav_menu(
+							array(
+								'theme_location'  => 'secondary',
+								'container_class' => 'navbar-desktop ',
+								'container_id'    => '',
+								'menu_class'      => 'navbar-nav',
+								'fallback_cb'     => '',
+								'menu_id'         => 'secondary-menu',
+								'depth'           => 2,
+								'walker'          => new Bensemangat_WP_Bootstrap_Navwalker(),
+							)
+						);
+						?>
+		
+				<?php if ( 'container' === $container ) : ?>
+				</div><!-- .container -->
+				<?php endif; ?>
+			</div>
 
 
             </div>
