@@ -21,7 +21,7 @@ $container = get_theme_mod( 'bensemangat_container_type' );
             
                 <?php foreach ($args['item'] as $item) {
                     $img = $item['icon'] ? $item['icon'] : '';
-                    echo '<div class="col-6 col-md-4 col-lg-2">';
+                    echo '<div class="col-6 col-md-4 col-lg-2 mx-auto">';
                     echo '<div class="wraper-item">';
                     echo '<div class="wrap-image">';
                     echo $img ? '<img class="img-fluid" src="'.$img['url'].'" alt="'.$img['alt'].'" />' : '';
