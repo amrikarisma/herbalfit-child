@@ -175,6 +175,9 @@ section {
             }
         }
     }
+    .btn-wrap {
+        padding-top:20px;
+    }
 }
 .template-products {
     .box-content-slider {
@@ -245,9 +248,14 @@ section {
     }
 }
 .template-with-background {
+    padding: 0;
     background-color: #88B44E;
     background-color: var(--main);
     background-image: url('../img/bg-2.png');
+    .image-template {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .heading {
         color: #252C30;
         color: var(--black);
@@ -295,7 +303,7 @@ section {
 }
 .template-with-background-image {
     text-align: center;
-    margin-bottom: calc(100%/4);
+    // margin-bottom: calc(100%/4);
     
     // .image-template {
     //     height: 480px;

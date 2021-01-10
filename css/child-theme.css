@@ -10972,9 +10972,6 @@ header {
     margin-bottom: 0;
     vertical-align: top; }
 
-.swiper-container {
-  height: calc(100vh/1.2); }
-
 .homepage .swiper-slide-cover {
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -11657,6 +11654,9 @@ section {
         .template-about .wraper-item .wrap-button,
         .template-products .wraper-item .wrap-button {
           position: static; } }
+  .template-about .btn-wrap,
+  .template-products .btn-wrap {
+    padding-top: 20px; }
 
 .template-products .box-content-slider {
   margin: 50px 0; }
@@ -11716,9 +11716,13 @@ section {
       display: inline-block; }
 
 .template-with-background {
+  padding: 0;
   background-color: #88B44E;
   background-color: var(--main);
   background-image: url("../img/bg-2.png"); }
+  .template-with-background .image-template {
+    padding-top: 30px;
+    padding-bottom: 30px; }
   .template-with-background .heading {
     color: #252C30;
     color: var(--black); }
@@ -11762,8 +11766,7 @@ section {
           line-height: 1.2em; }
 
 .template-with-background-image {
-  text-align: center;
-  margin-bottom: calc(100%/4); }
+  text-align: center; }
   .template-with-background-image .heading,
   .template-with-background-image .subheading,
   .template-with-background-image .block-right {
@@ -11954,6 +11957,13 @@ footer .footer-full-wrap + .copyright-wrap {
 
 .wpcf7-form-control-wrap:not(.margin-none) {
   margin-bottom: 4px; }
+
+.swiper-wrapper.disabled {
+  -webkit-transform: translate3d(0px, 0, 0) !important;
+          transform: translate3d(0px, 0, 0) !important; }
+
+.swiper-pagination.disabled {
+  display: none; }
 
 html, body, div, table {
   font-size: 14px;

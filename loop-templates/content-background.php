@@ -8,15 +8,15 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'bensemangat_container_type' );
-$bgColor = $args['styling']['background_color'] ? 'style="background-color:'.$args['styling']['background_color'].' "' : '';
+$bgColor = $args['styling']['background_color'] ? 'background-color:'.$args['styling']['background_color'].'; ' : '';
 $bgImgPosX = $args['styling']['potition_image'] ? 'background-position-x: '.$args['styling']['potition_image'].'%;' : 'background-position-x: 140%;';
 $bgImg = $args['styling']['image'] ? 'style="background-image: url('.$args['styling']['image'].');'.$bgImgPosX.' background-position-y: 40%;background-repeat: no-repeat;"' : '';
 $color1 = $args['styling']['font_color_1'] ? 'style="color:'.$args['styling']['font_color_1'].'"' : '';
 $color2 = $args['styling']['font_color_2'] ? 'style="color:'.$args['styling']['font_color_2'].'"' : '';
-
+$bg = $bgImg
 ?>
 
-<section class="template-with-background" <?php echo $bgColor; ?>>
+<section class="template-with-background" style="<?php echo $bgColor; ?>">
     <div class="image-template" <?php echo $bgImg; ?>>
         <div class="<?php echo esc_attr( $container ); ?>">
             <div class="row">
@@ -53,5 +53,5 @@ $color2 = $args['styling']['font_color_2'] ? 'style="color:'.$args['styling']['f
             </div>
 
         </div>
-    </div>
+    <!-- </div> -->
 </section>

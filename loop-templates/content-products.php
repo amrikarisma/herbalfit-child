@@ -23,7 +23,7 @@ $container = get_theme_mod( 'bensemangat_container_type' );
         <!-- Slider main container -->
         <div class="swiper-container products">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" data-count="<?php echo count($args['item']); ?>">
             <?php foreach ( $args['item'] as $post ) : ?>
                 <?php setup_postdata( $post );
                 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );

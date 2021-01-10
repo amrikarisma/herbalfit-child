@@ -243,8 +243,9 @@ header {
     }
 }
 .swiper-container {
-    height: calc(100vh/1.2);
-    
+    @media (min-width:992px) {
+        // height: calc(100vh/1.2);
+    }
 }
 .homepage .swiper-slide-cover{
     background-repeat: no-repeat !important;
