@@ -20,12 +20,26 @@ $container = get_theme_mod( 'bensemangat_container_type' );
             <div class="row">
             
                 <?php foreach ($args['item'] as $item) {
-                    $img = $item['icon'];
-                    // var_dump($item['icon']); die();
-                    echo '<div class="col">';
-                    echo '<img class="img-fluid" src="'.$img['url'].'" alt="'.$img['alt'].'" />';
-                    echo '<h6 class="header">'.$item['title'].'</h6>';
-                    echo '<p>'.$item['description'].'</p>';
+                    $img = $item['icon'] ? $item['icon'] : '';
+                    echo '<div class="col-6 col-md-4 col-lg-2">';
+                    echo '<div class="wraper-item">';
+                    echo '<div class="wrap-image">';
+                    echo $img ? '<img class="img-fluid" src="'.$img['url'].'" alt="'.$img['alt'].'" />' : '';
+                    echo '</div>';
+                    echo '<div class="wrap-content">';
+                    echo $item['title'] ? '<h6 class="header">'.$item['title'].'</h6>' : '';
+                    echo $item['description'] ? '<p>'.$item['description'].'</p>' : '';
+                    if (isset($item['item_list']) && !empty($item['item_list']))  {
+                        foreach ($item['item_list'] as $item_list) {
+                            echo '<p>'.$item_list['name'].'</p>';
+                            echo '<hr />';
+                        }
+                    }
+                    echo '</div>';
+                    echo '<div class="wrap-button">';
+                    echo '<a href="'.$item['button']['url'].'" class="btn btn-primary">'.$item['button']['text'].'</a>';
+                    echo '</div>';
+                    echo '</div>';
                     echo '</div>';
 
                 } ?>

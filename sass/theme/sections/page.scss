@@ -1,7 +1,7 @@
 section {
     padding-top: 30px;
     padding-bottom: 30px;
-    overflow: hidden;
+    // overflow: hidden;
 }
 .action {
     margin-top: -50px;
@@ -152,7 +152,32 @@ section {
             display: none;
         }
     }
-
+    .wraper-item {
+        // display: flex;
+        width: 100%;
+        // align-items: center;
+        // justify-content: center;
+        // flex-direction: column;
+        .wrap-image {
+            position:absolute;
+            top:0;
+        }
+        .wrap-content {
+            margin-top: 100%;
+            padding-top: 35px;
+            padding-bottom: 35px;
+        }
+        .wrap-button {
+            position:absolute;
+            bottom: -45px;
+            @media (max-width: 767px) {
+                position: static;
+            }
+        }
+    }
+    .btn-wrap {
+        padding-top:20px;
+    }
 }
 .template-products {
     .box-content-slider {
@@ -223,9 +248,14 @@ section {
     }
 }
 .template-with-background {
+    padding: 0;
     background-color: #88B44E;
     background-color: var(--main);
     background-image: url('../img/bg-2.png');
+    .image-template {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .heading {
         color: #252C30;
         color: var(--black);
@@ -273,7 +303,7 @@ section {
 }
 .template-with-background-image {
     text-align: center;
-    margin-bottom: calc(100%/4);
+    // margin-bottom: calc(100%/4);
     
     // .image-template {
     //     height: 480px;
@@ -310,11 +340,23 @@ section {
     img {
         max-width: 194px;
     }
+    .logo-footer {
+        @media (max-width: 991px) {
+            padding-bottom: 30px;
+            /* text-align: center; */
+            /* align-items: center; */
+            justify-content: center;
+            /* align-self: center; */
+            width: 100%;
+            display: flex;
+        }
+    }
     .ltx-social {
         &.ltx-nav-second {
             text-align: right;
             display: flex;
             flex-direction: row-reverse;
+            justify-content: center;
             .header {
                 color: #fff;
                 font-size: 20px;
@@ -324,11 +366,15 @@ section {
                 span {
                     white-space: nowrap;
                 }
+                @media (max-width: 991px) {
+                    display: none;
+                }
             }
             ul {
                 margin-bottom: 0;
                 @media (max-width:768px) {
                     margin-left: -15px;
+                    padding-left: 0;
                 }
             }
             li {

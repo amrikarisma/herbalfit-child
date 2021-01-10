@@ -42,13 +42,15 @@ nav.navbar.affix {
 }
 .offcanvas-header{ display:none; }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .offcanvas-active {
         position: fixed;
         top: 0;
         .navbar-layout-desktop-center-absolute {
             height: 100%;
             position: fixed;
+            text-align: left;
+            top:0;
             .navbar-desktop {
                 margin-top: 0;
             }

@@ -1,5 +1,22 @@
 // Add your custom JS here.
-var swiper = new Swiper('.products', {
+
+
+var homepage = new Swiper('.homepage', {
+  loop: true,
+  autoplay:true,
+  zoom: true,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+console.log(jQuery(".products .swiper-wrapper").data('count'));
+if(jQuery(".products .swiper-wrapper").data('count') > 1) {
+  var swiper = new Swiper('.products', {
     cssMode: true,
     // height:680,
     // autoHeight:true,
@@ -29,21 +46,12 @@ var swiper = new Swiper('.products', {
         spaceBetween: 30
       }
     }
-});
-
-var homepage = new Swiper('.homepage', {
-  loop: true,
-  autoplay:true,
-  zoom: true,
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
+  });
+} else {
+  jQuery('.swiper-wrapper').addClass( "disabled" );
+  jQuery('.swiper-button-prev').css( "display", "none" );
+  jQuery('.swiper-button-next').css( "display", "none" );
+}
 
 jQuery("[data-trigger]").on("click", function(){
   var trigger_id =  jQuery(this).attr('data-trigger');

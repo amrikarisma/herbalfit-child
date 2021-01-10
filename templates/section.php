@@ -58,12 +58,9 @@ while ( have_posts() ) :
                 case 'section_with_image_background':
                     get_template_part( 'loop-templates/content', 'image', $section );
                     break;
-
-                
                 default:
                     # code...
                     break;
-
             endswitch;
 
         endforeach;
